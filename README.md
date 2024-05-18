@@ -1,4 +1,5 @@
 # Final-Grade-Calculator
+Designed using Flask
 Calculates the grade you need on your final to achieve the desired class percentage
 
 ## Running the application
