@@ -1,2 +1,2 @@
-# Final-Grade-GPA-Calculator
-Calculates your final grade and GPA 
+# Final-Grade-Calculator
+Calculates your final grade
