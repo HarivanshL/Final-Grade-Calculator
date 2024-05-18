@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+
+<body class="bg-dark">
+    <div class="bg-white ">
+        <div class="row justify-content-center">
+            <div class="col-12">
+                <h1 class="text-center">Final Grade Calculator</h1>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+        <div class="container-sm col-sm-5 border rounded bg-white p-4">
+            <div class="text-center">
+                <h1> Caculate Final Grade </h1>
+                <p> This calculates the grade you need on your final to score the desired percentage</p>
+            </div>
+            <form action="/" method="post">
+                <div class="form-group">
+                    <input type="text" class='form-control' name="current_grade" placeholder="Enter current grade %"
+                        required>
+                    <input type="text" class='form-control' name="percentage" placeholder="Enter desired grade %"
+                        required>
+                    <input type="text" class='form-control' name="weight" placeholder="Enter final weight %" required>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary"> Calculate </button>
+                    </div>
+                </div>
+            </form>
+            {% if result is not none %}
+            <h2 class="text-center">{{ final_grade }}</h2>
+            {% endif %}
+        </div>
+    </div>
+
+</body>
+
+</html>
